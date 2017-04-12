@@ -1,0 +1,31 @@
+-- Changelog Theme UMY 2014  --
+===============================
+
+Ver Beta (01-02-14)
+=================
+- Initial Release 
+- Menambahkan Visual Composer
+- Menambahkan Revolution Slider
+- Versi ini seterusnya hanya akan digunakan dan dioptimasi pada web Portal UMY
+
+Ver 1.0 (29-04-14)
+=================
+- Menghapus Visual Composer
+- Menghapus Revolution Slider, mengembalikan pada slider default
+- Menambahkan Page Builder SiteOrigin
+- Menambahkan Redux Theme Options
+- Bug Fixed pada Responsive Layout
+- Bug Fixed pada Page Builder CSS
+- News di halaman depan ditambah
+- Dukungan Multi header (Portal/Fakultas)
+- menambahkan Toggle Footer widget
+- menghapus user_type menu pada Home dan footer.php
+
+To Do:
+- Setting Redux Theme Options
+- favicon
+- centering image page builder
+- opsi w/wo sidebar pada page.php
+- tambah role & capabilities untuk admin fakultas/prodi
+- perbaiki template_news.php
+- perbaiki CSS pagebuilder untuk formating paragraf

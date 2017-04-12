@@ -1,0 +1,108 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Project-Id-Version: UMY 14\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Yaufani Adam <yaufaniadam@yahoo.com>\n"
+"Language-Team: Yaufani Adam <yaufaniadam@umy.ac.id>\n"
+"MIME-Version: 1.0\n"
+"Language: id_ID\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#. Text in echo
+#: template/template_home.php:29
+msgid "Read More"
+msgstr "Selengkapnya"
+
+#. Text in echo
+#: template/template_home.php:59
+msgid "Welcome to UMY"
+msgstr "Selamat datang di UMY"
+
+#. Text in echo
+#: template/template_home.php:66:93
+msgid "Program"
+msgstr "Program Studi"
+
+#. Text in echo
+#: template/template_home.php:68:70
+msgid "See all program"
+msgstr "Lihat semua Program Studi"
+
+#. Text in echo
+#: template/template_home.php:76
+msgid "Admission"
+msgstr "Pendaftaran"
+
+#. Text in echo
+#: template/template_home.php:82
+msgid "Visits"
+msgstr "Kunjungan"
+
+#. Text in echo
+#: template/template_home.php:83
+msgid "Visit to UMY"
+msgstr "Jadwalkan kunjungan ke UMY"
+
+#. Text in echo
+#: template/template_home.php:219
+msgid "News"
+msgstr "Berita"
+
+#. Text in echo
+#: template/template_home.php:258
+msgid "Events"
+msgstr "Kegiatan"
+
+#. Text in echo
+#: template/template_home.php:259
+msgid "Academics"
+msgstr "Akademik"
+
+#. Text in echo
+#: template/template_home.php:288:319
+msgid "End"
+msgstr "Selesai"
+
+#. Text in echo
+#: template/template_home.php:228
+msgid "All News"
+msgstr "Semua Berita"
+
+#. Text in echo
+#: template/template_home.php:331
+msgid "All Agenda"
+msgstr "Semua Agenda"
+
+#. Text in echo
+#: functions/block.php:4
+msgid "Recent News"
+msgstr "Berita Terkini"
+
+#. Text in echo
+#: functions/block.php:33
+msgid "Popular Topics"
+msgstr "Topik Populer"
+
+#. Text in echo
+#: functions/block.php:38
+msgid "UMY NEWS"
+msgstr "BERITA UMY"
+
+#. Text in echo
+#: footer.php:38
+msgid "Quick Links"
+msgstr "Link"
+
+#. Text in echo
+#: footer.php:38
+msgid "Contact"
+msgstr "Kontak"
+
+#. Text in echo
+#: footer.php:38
+msgid "Address"
+msgstr "Alamat"
