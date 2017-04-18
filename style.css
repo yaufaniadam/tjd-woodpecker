@@ -12,7 +12,7 @@ Tag: responsive
 	#Site Styles
 	#Page Styles
 	#Media Queries
-	#Font-Face */
+	#Font-Face 
 
 /* #Site Styles =========================================== */
 * {
@@ -33,13 +33,10 @@ body {
 	background:#fefefe;
 }
 
-.container-fluid {
-	max-width:1250px !important;
+.container {
+	max-width:1020px !important;
 }
-.contaners{
-	width: 100%;
-	margin: 0px;
-}
+
 #discount .textwidget{
 	margin-right: 20px;
 }
@@ -351,38 +348,7 @@ p img,.wp-caption {
 .wp-pagenavi a:hover, .wp-pagenavi span.current{border:1px solid #5DA03B !important;background:#74AF56;color:#fff;}
 .wp-pagenavi span.current{font-weight:bold;}
 
-/* ======== TABEL CONTENT ====== */
 
-.table-content  {
-	margin:0 0 20px;
-}
-.table-content h3 {
-	color:#666;
-	margin:0;
-	font-size:20px;
-	padding: 10px 20px;
-	font-weight:700;
-	background:#f5f5f5;
-	border-bottom:1px solid #d9d9d9;
-}
-.table-content h2 a{
-	color:#fff;
-}
-.table-content ul {
-	list-style:none;
-	margin:0;
-}
-.table-content ul li {
-	padding: 5px 15px;
-	border-bottom:1px solid #f1f1f1;
-	background:#f5f5f5;
-}
-.table-content ul li:nth-child(even) {
-	background:#efefef;
-}
-.table-content ul li.onread {
-	border-left:3px solid red;
-}
 
 /* ======== WIDGET ====== */
 
@@ -454,29 +420,6 @@ border-bottom: 1px solid #ddd; color:#888; padding:8px;}
 	font-weight:normal;
 }
 
-/* ======== ARCHIVE ====== */
-
-.archive {
-	margin-bottom:20px;
-}
-.archive img {
-	width:100%;
-	height:auto;
-}
-h2.title-archive {
-	margin:0;
-	padding:0;
-}
-h2.title-archive a{
-	font-size:28px;
-	color:#333;
-}
-.archive-excerpt p{
-	margin:0;
-}
-figure.archive  {
-	overflow:hidden;
-}
 
 /* ======== FOOTER ====== */
 
@@ -504,14 +447,10 @@ h3.widget-title{
 }
 
 @media (max-width:767px){
-	#pg-2-0{
-		width: 50% !important;
-	}
+	
 }
 @media(min-width:768px) and (max-width:991px){
-	#pg-2-0{
-		width: 70% !important;
-	}
+	
 }
 @media(min-width:992px) and (max-width:1199px){
 
@@ -521,11 +460,4 @@ h3.widget-title{
 }
 @media(max-width:1200px){
 
-}
-
-/*============== CONTAINER =================*/
-@media (min-width: 1200px){}
-	.container {
-		width: 1000px !important;
-	}
 }
