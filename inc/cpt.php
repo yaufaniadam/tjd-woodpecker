@@ -82,7 +82,11 @@ function custom_product_column( $column, $post_id ) {
             echo get_post_meta( $post_id , 'product-id' , true ); 			
             break; 
 		case 'thumbnail' :
-			
+			if( has_post_thumbnail() ) {
+				the_post_thumbnail();
+			} else {
+				echo '<img src="https://placehold.it/100x100" />';
+			}
             break;
 		case 'price' :
 			
