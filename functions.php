@@ -1,7 +1,8 @@
 <?php
-require('inc/better-excerpts.php');
-require('inc/wp_bootstrap_navwalker.php');
-require_once('inc/cpt.php');
+require( 'inc/better-excerpts.php' );
+require( 'inc/wp_bootstrap_navwalker.php' );
+require_once( 'inc/cpt.php' );
+require_once( 'inc/tgm.php' );
 
 if ( ! function_exists( 'bws_setup' ) ) :
 function bws_setup() {

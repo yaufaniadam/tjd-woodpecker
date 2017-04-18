@@ -11,7 +11,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
-	<!--<link href='https://fonts.googleapis.com/css?family=Catamaran:300,400,800' rel='stylesheet' type='text/css'>-->	
+	
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 </head>
 <body <?php body_class(); ?>>
@@ -36,8 +36,8 @@
 		
 		  <?php 
 			wp_nav_menu( array(
-				'menu'              => 'primary',
-				'theme_location'    => 'primary',
+				'menu'              => 'top',
+				'theme_location'    => 'top',
 				'depth'             => 2,
 				'container'         => 'div',
 				'container_id'      => 'top_menu',

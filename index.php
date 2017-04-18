@@ -19,9 +19,9 @@ if ( is_plugin_active( 'siteorigin-panels/siteorigin-panels.php' ) ) {
 }
 ?>
 <div class="band page <?php echo $so_active_status; ?>">
-	<div class="container">	
-		<div class="row">	
-			<div class="col-sm-<?php echo $so_col; ?>">	
+	<div class="containers">	
+		<div class="row" style="margin-right:0;margin-left:0">	
+			<div class="col-sm-<?php echo $so_col; ?>" style="padding:0px;">	
 				<article class="post">
 				
 				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>

@@ -36,8 +36,16 @@ background:#fefefe;
 .container-fluid {
 max-width:1250px !important;
 }
-
-
+.contaners{
+	width: 100%;
+	margin: 0px;
+}
+#discount .textwidget{
+	margin-right: 20px;
+}
+#discount2 .textwidget{
+	margin-right: 10px;
+}
 a {
 color:#777;
 text-decoration:none;
@@ -74,7 +82,15 @@ border-bottom:none;
 .navbar-default.navbar-top {
 background:#0a0b0d;
 }
-
+.navbar-default{
+ border-color: white;
+}
+#pg-2-0{
+	width: 75% !important;
+    margin: auto;
+    margin-bottom: 15px !important;
+    margin-left: 230px;
+}
 
 /*navbar-toggle*/
 .navbar-toggle {
@@ -111,11 +127,14 @@ background:none !important;
 	margin-bottom:0;
 }
 
+.navbar-default{
+border-color:none !important;
+}
+
 .navbar-nav.top>li>a {
 padding: 42px 0px 1px 0px;
 background:#0a0b0d;
-font-weight:500;
-font-family:gotham;
+font-weight:400;
 text-transform:uppercase;
 font-size:13px;
 margin-left:25px;
@@ -123,9 +142,9 @@ color:#fff;
 }
 .navbar-nav.primary>li>a {
 font-weight:500;
-font-family:gotham;
 text-transform:uppercase;
-font-size:14px;
+font-size:12px;
+padding: 15px 17px;
 }
 .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
 background:transparent !important;
@@ -137,7 +156,9 @@ background:transparent !important;
 border-bottom:none;
 color:#999;
 }
-
+ul#menu-top.nav.navbar-nav.top.navbar-right{
+	margin-right: 17px;
+}
 
 /* logo */
 h1.logo,
@@ -462,12 +483,18 @@ overflow:hidden;
 
 .footer {
 padding:40px 0 40px;
-background:#f9f9f9;
+background:#ffd6d0;
+font-family: 'Segoe UI';
 }
 .footer p {
-color:#fff;
-font-size:14px;
+color:gray;
+font-size:13px;
 line-height:18px;
+}
+h3.widget-title{
+	font-size: 16px;
+	font-family: 'Segoe UI';
+	font-weight: 600;
 }
 
 @media(max-width:480px){
@@ -478,10 +505,14 @@ line-height:18px;
 }
 
 @media (max-width:767px){
-	
+	#pg-2-0{
+	width: 50% !important;
+}
 }
 @media(min-width:768px) and (max-width:991px){
-
+	#pg-2-0{
+	width: 70% !important;
+}
 }
 @media(min-width:992px) and (max-width:1199px){
 
@@ -491,4 +522,11 @@ line-height:18px;
 }
 @media(max-width:1200px){
 
+}
+
+/*============== CONTAINER =================*/
+@media (min-width: 1200px){}
+.container {
+    width: 1000px !important;
+}
 }
