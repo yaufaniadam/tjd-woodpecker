@@ -22,7 +22,7 @@
 	  <div class="container">
 		<div class="navbar-header">		
 		  
-		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav2" aria-expanded="true">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav" aria-expanded="true">
 			<span class="sr-only">Toggle navigation</span>
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
@@ -32,7 +32,7 @@
 		 <h1 class="logo"><a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo.png"></a></h1>
 		</div>
 		
-		<div class="collapse navbar-collapse" id="nav2">	  
+		<div class="collapse navbar-collapse" >	  
 		
 		  <?php 
 			wp_nav_menu( array(
@@ -50,7 +50,7 @@
 	  </div><!-- /.container-fluid -->
 	</nav>
 </div>
-<div class="main-nav">
+<div class="main-nav collapse navbar-collapse" id="nav">
 	<nav class="navbar navbar-default">		
 		<div class="container">
 			<?php 
