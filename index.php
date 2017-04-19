@@ -32,6 +32,7 @@ if ( is_plugin_active( 'siteorigin-panels/siteorigin-panels.php' ) ) {
 				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
 				
 					<article class="post-content">
+						
 						<?php the_content(); ?>
 					</article>					
 				

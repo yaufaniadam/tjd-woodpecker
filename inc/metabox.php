@@ -5,7 +5,7 @@ function woodpecker_( $meta_boxes ) {
 	$meta_boxes[] = array(
 		'id' => 'product-details',
 		'title' => __( 'Product Details', 'woodpecker' ),
-		'pages' => array( 'products' ),
+		'pages' => array( 'product' ),
 		
 		'priority' => 'high',
 		'autosave' => true,
@@ -37,5 +37,3 @@ function woodpecker_( $meta_boxes ) {
 	);	
 	return $meta_boxes;
 }
-
-

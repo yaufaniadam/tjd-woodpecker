@@ -26,7 +26,7 @@ function create_post_types() {
 			'public' 			=> true,
 			'supports'			=> array( 'title', 'editor', 'thumbnail' ),
 			'query_var' 		=> true,
-			'rewrite' 			=> array( 'slug' => 'products' ),
+			'rewrite' 			=> array( 'slug' => 'product' ),
 			'menu_icon'			=> 'dashicons-chart-bar',
 			'show_in_nav_menus' => false,		  
 	);

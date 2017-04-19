@@ -18,10 +18,10 @@ function bws_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	
 	add_theme_support( 'post-thumbnails' );
-	add_image_size( 'slider', 1400, 450, true );
+	add_image_size( 'slider', 1400, 550, true );
 	add_image_size( 'large', 800, 600, true );
 	add_image_size( 'medium', 640, 480, true );
-	add_image_size( 'small', 320, 240, true );
+	add_image_size( 'small', 255, 255, true );
 	add_image_size( 'thumbnail', 150, 150,true );
 
 	register_nav_menus( array(
