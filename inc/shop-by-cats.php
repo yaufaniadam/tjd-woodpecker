@@ -25,9 +25,19 @@ class WP_Widget_shopbycats extends WP_Widget {
 	<article>
 		<ul>
 		<?php
-		
-					$term_id = get_queried_object()->term_id;
-					$taxonomy_name = 'product_cat';
+			$taxonomy_name = 'product_cat';
+			
+			if( is_single()) {				
+				$terms = get_the_terms( $post->ID, $taxonomy_name );
+				foreach ( $terms as $term ) {
+					$termID[] = $term->term_id;
+				}
+				$term_id = $termID[0]; 
+			} else {
+				$term_id = get_queried_object()->term_id;				
+			}
+					
+					
 					$term_children = get_term_children( $term_id, $taxonomy_name );
 					
 					if ( $term_children ) {	

@@ -12,7 +12,7 @@ get_header(); ?>
 			<div class="col-sm-9">	
 				<article class="post">
 				
-				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
+				<?php if( have_posts()) : while ( have_posts() ) : the_post();?>
 				
 					<article class="post-content">
 						<?php the_title(); ?>
