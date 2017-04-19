@@ -76,7 +76,7 @@ a.more {
 
 /* main-nav */
 .main-nav {
-	background:#f8f8f8;
+	background:#fff;
 }
 .navbar {
 	margin-bottom:0;
@@ -84,6 +84,7 @@ a.more {
 	border:none;
 }
 .navbar-default{
+	background:#fff;
 	border-color: white;
 }
 
@@ -219,9 +220,20 @@ p.logo a {
 	margin:0;
 }
 
+/* ======== BREADCRUMB ====== */
+.breadcrumb {
+	background:#fff;
+	margin-bottom:30px;
+	font-size:14px;
+	padding:5px 15px;
+}
+.page.so_active {
+	padding:0;
+}
 /* ======== PAGE ====== */
 .band.page {
-	padding:40px 0;
+	padding:30px 0;
+	background:#f8f8f8;
 }
 .page.so_active {
 	padding:0;
@@ -424,12 +436,18 @@ h3.widget_title,
 	color:#666;
 	margin:0;
 	margin-bottom:10px;
+	text-transform:uppercase;
 }
 .widgets nav{
 	margin-bottom:20px;
 }
 .widgets nav ul {
-	list-style:none;
+	list-style-type:square;
+	margin-left:20px;
+}
+.widgets nav li,
+.widgets nav li a {
+	font-size:15px;
 }
 .widgets h4.media-heading a {
 	font-size:14px;
@@ -473,6 +491,30 @@ border-bottom: 1px solid #ddd; color:#888; padding:8px;}
 }
 .search-field {
 	font-weight:normal;
+}
+
+/* ======== ARCHIVE & TAXONOMY PRODUCT ====== */
+.product-post {
+	height:430px;
+	background:#fff;
+	margin-bottom:25px;
+	border-bottom:1px solid #bbb;
+}
+.product-post .inner {
+	margin:15px;
+	position:relative;
+	height:145px;
+}
+.product-post .inner h4 a {
+	font-size:16px;
+	line-height:1.5em;
+	color:#555;
+}
+.inner .price {
+	position:absolute;
+	width:100%;
+	bottom:0 !important;
+	font-size:14px;
 }
 
 /* ======== FOOTER ====== */

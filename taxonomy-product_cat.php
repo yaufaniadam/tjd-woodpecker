@@ -2,20 +2,39 @@
 get_header(); ?>
 
 <div class="band page">
-	<div class="container">	
-		<div class="row">	
+	<div class="container">		
+		<div class="row">
+			<article class="col-sm-12">
+				<div class="breadcrumb">
+					<?php if ( function_exists( 'breadcrumb_trail' ) ) breadcrumb_trail(); ?>
+				</div>
+			</article>
+			<div class="clearfix"></div>
 			<article class="col-sm-3">
-				<div class="sidebar">
-				<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('product') ) :  endif; ?>	
+				<div class="sidebar">					
+					<?php 					
+						$instance = array (					
+							'title' => 'Shop by Category',
+						);
+						$args = array (
+							'before_widget' => '<section class="widgets" id="">',
+							'after_widget' => '</nav></section>',
+							'before_title' => '<h3 class="widget_title">',
+							'after_title' => '</h3><nav>',
+							'title' => '',
+						);
+						
+						the_widget( 'WP_Widget_shopbycats', $instance, $args ); 
+					?>
 				</div>
 			</article>
 			<div class="col-sm-9">	
-				<div class="container">
+				<div class="row">
 				
 				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
 				
-					<div class="col-md-3">
-						<div class="room-post">
+					<div class="col-md-4">
+						<div class="product-post">
 							<?php if(has_post_thumbnail()){ ?>
 								<a href="<?php the_permalink(); ?>">
 									<?php the_post_thumbnail('small'); ?>
@@ -29,16 +48,18 @@ get_header(); ?>
 								<h4 class="">
 									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 								</h4>
-								<p class="">
-									<?php 
-										$price = rwmb_meta( 'product_price' , true );
-										if( $price ) {
-											echo "Rp" . number_format( $price ); 
-										} else {
-											echo "&nbsp";
-										}
-									?>
-								</p>
+								<div class="price">
+									<aside>
+										<?php 
+											$price = rwmb_meta( 'product_price' , true );
+											if( $price ) {
+												echo "Rp" . number_format( $price ); 
+											} else {
+												echo "&nbsp";
+											}
+										?>
+									</aside>
+								</div>
 								
 							</div>					
 						</div>

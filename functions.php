@@ -4,6 +4,7 @@ require( 'inc/wp-bootstrap-navwalker.php' );
 require_once( 'inc/cpt.php' );
 require_once( 'inc/tgm.php' );
 require_once( 'inc/metabox.php' );
+require_once( 'inc/shop-by-cats.php' );
 
 if ( ! function_exists( 'bws_setup' ) ) :
 function bws_setup() {
