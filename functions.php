@@ -87,6 +87,15 @@ if ( function_exists('register_sidebar') ) {
 		'after_title' => '</h3><nav>',
 	));
 	register_sidebar(array(
+		'name' => 'Product',
+		'id' => 'product',
+		'description' => 'Widget on Product page.',
+		'before_widget' => '<section class="%2$s widgets" id="%1$s">',
+		'after_widget' => '</nav></section>',
+		'before_title' => '<h3 class="widget_title">',
+		'after_title' => '</h3><nav>',
+	));
+	register_sidebar(array(
 		'name' => 'Footer',
 		'id' => 'footer',
 		'description' => 'Widget on Footer.',

@@ -420,23 +420,13 @@ p img,.wp-caption {
 
 h3.widget_title,
 .footer h3.widget_title {
-	font:700 14px/9px 'Segoe UI', apple-system, 'Helvetica Neue', 'BlinkMacSystemFont', 'Roboto', sans-serif;
+	font:700 16px/9px 'Segoe UI', apple-system, 'Helvetica Neue', 'BlinkMacSystemFont', 'Roboto', sans-serif;
 	color:#666;
 	margin:0;
 	margin-bottom:10px;
-	padding:0px 0 1px;
-	text-transform:uppercase;
-	background:url(images/bgwidget.png) left center repeat-x;
-}
-h3.widget_title span {
-	background:#fff;
-	padding-right:2px;
 }
 .widgets nav{
-	border:1px solid #ddd;
-	border-top:3px solid #ec3432;
 	margin-bottom:20px;
-	padding:10px;
 }
 .widgets nav ul {
 	list-style:none;
