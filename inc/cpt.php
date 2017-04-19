@@ -30,7 +30,7 @@ function create_post_types() {
 			'menu_icon'			=> 'dashicons-chart-bar',
 			'show_in_nav_menus' => false,		  
 	);
-	register_post_type( 'product', $args );	
+	register_post_type( 'products', $args );	
 }
 add_action( 'init', 'create_post_types' );
 
@@ -58,12 +58,12 @@ function create_taxonomies() {
 			'rewrite' 				=> array( 'slug' => 'product-category' ),
 			'show_in_nav_menus' 	=> true,			
 	);	
-	register_taxonomy( 'product_cats', 'product', $args );
+	register_taxonomy( 'product_cats', 'products', $args );
 }
 add_action( 'init', 'create_taxonomies' );
 
 // Custom column 
-function set_custom_edit_product_columns($columns) {
+function set_custom_edit_products_columns($columns) {
 	$columns = array(
 			'cb' 			=> '<input type="checkbox" />',
 			'product-id' 	=> __( 'Kode' ),
@@ -75,7 +75,7 @@ function set_custom_edit_product_columns($columns) {
     return $columns;
 }
 
-function custom_product_column( $column, $post_id ) {
+function custom_products_column( $column, $post_id ) {
     switch ( $column ) {
 
         case 'product-id' :
@@ -97,5 +97,5 @@ function custom_product_column( $column, $post_id ) {
 		
     }
 }
-add_filter( 'manage_product_posts_columns', 'set_custom_edit_product_columns' );
-add_action( 'manage_product_posts_custom_column' , 'custom_product_column', 10, 2 );
+add_filter( 'manage_products_posts_columns', 'set_custom_edit_products_columns' );
+add_action( 'manage_products_posts_custom_column' , 'custom_products_column', 10, 2 );

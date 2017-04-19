@@ -25,17 +25,17 @@ if ( is_plugin_active( 'siteorigin-panels/siteorigin-panels.php' ) ) {
 			<div class="col-sm-<?php echo $so_col; ?>">	
 				<article class="post">
 				
-				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
-				
-					<article class="post-content">
-						<?php the_content(); ?>
-					</article>					
-				
-				<?php  endwhile; endif;?>
-				<div class="comments" id="comments">
-					<!--<h3>comments here</h3>-->
-				</div>
-			</article><!-- .post -->						
+					<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
+					
+						<article class="post-content">
+							<?php the_content(); ?>
+						</article>					
+					
+					<?php  endwhile; endif;?>
+					<div class="comments" id="comments">
+						<!--<h3>comments here</h3>-->
+					</div>
+				</article><!-- .post -->						
 			</div>		
 			<article class="col-sm-4 <?php echo $so_sidebar; ?>">
 				<div class="sidebar">

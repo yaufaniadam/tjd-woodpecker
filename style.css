@@ -227,6 +227,26 @@ p.logo a {
 	padding:0;
 }
 
+/* ======== DISCOUNT ====== */
+#discount{
+	text-align:center;
+	padding:10px;
+}
+#discount a{
+	text-align:center;
+	color:#e01313;
+	font-weight:bold;
+	padding:0px 20px;
+	display:inline-block;
+	border-right:1px solid #666;
+	margin:0;
+}
+#discount a:hover{
+	color:#da3a3a;
+}
+#discount a:last-child{
+	border-right:none;
+}
 
 /* ======== POST /SINGLE ====== */
 
@@ -396,8 +416,6 @@ p img,.wp-caption {
 .wp-pagenavi a:hover, .wp-pagenavi span.current{border:1px solid #5DA03B !important;background:#74AF56;color:#fff;}
 .wp-pagenavi span.current{font-weight:bold;}
 
-
-
 /* ======== WIDGET ====== */
 
 h3.widget_title,
@@ -423,7 +441,6 @@ h3.widget_title span {
 .widgets nav ul {
 	list-style:none;
 }
-
 .widgets h4.media-heading a {
 	font-size:14px;
 	line-height:20px;
@@ -468,12 +485,11 @@ border-bottom: 1px solid #ddd; color:#888; padding:8px;}
 	font-weight:normal;
 }
 
-
 /* ======== FOOTER ====== */
 
 .footer {
-	padding:40px 0 40px;
-	background:#ffd6d0;
+	padding:40px 0 20px;
+	background:#fff;
 	font-family: 'Segoe UI';
 }
 .footer p {

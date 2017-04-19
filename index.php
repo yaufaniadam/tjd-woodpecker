@@ -9,19 +9,24 @@ if ( is_plugin_active( 'siteorigin-panels/siteorigin-panels.php' ) ) {
 		$so_sidebar = 'hidden';
 	} else {
 		$so_active_status ="";
-		$so_col = 8;
+		$so_col = 9;
 		$so_sidebar = '';
 	}
 } else {
 	$so_active_status ="";
-	$so_col = 8;
+	$so_col = 9;
 	$so_sidebar = '';
 }
 ?>
 <div class="band page <?php echo $so_active_status; ?>">
-	<div class="containers">	
-		<div class="row" style="margin-right:0;margin-left:0">	
-			<div class="col-sm-<?php echo $so_col; ?>" style="padding:0px;">	
+	<div class="container">	
+		<div class="row">	
+			<article class="col-sm-3 <?php echo $so_sidebar; ?>">
+				<div class="sidebar">
+				<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('single') ) :  endif; ?>	
+				</div>
+			</article>
+			<div class="col-sm-<?php echo $so_col; ?>">	
 				<article class="post">
 				
 				<?php if(have_posts()) : while ( have_posts() ) : the_post();?>
@@ -36,11 +41,7 @@ if ( is_plugin_active( 'siteorigin-panels/siteorigin-panels.php' ) ) {
 				</div>
 			</article><!-- .post -->						
 			</div>		
-			<article class="col-sm-4 <?php echo $so_sidebar; ?>">
-				<div class="sidebar">
-				<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar('single') ) :  endif; ?>	
-				</div>
-			</article>
+			
 			
 		</div><!-- .8 -->
 	</div><!-- .row -->
