@@ -3,6 +3,7 @@ require( 'inc/better-excerpts.php' );
 require( 'inc/wp-bootstrap-navwalker.php' );
 require_once( 'inc/cpt.php' );
 require_once( 'inc/tgm.php' );
+require_once( 'inc/metabox.php' );
 
 if ( ! function_exists( 'bws_setup' ) ) :
 function bws_setup() {

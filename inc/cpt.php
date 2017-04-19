@@ -26,11 +26,11 @@ function create_post_types() {
 			'public' 			=> true,
 			'supports'			=> array( 'title', 'editor', 'thumbnail' ),
 			'query_var' 		=> true,
-			'rewrite' 			=> array( 'slug' => 'product' ),
+			'rewrite' 			=> array( 'slug' => 'products' ),
 			'menu_icon'			=> 'dashicons-chart-bar',
 			'show_in_nav_menus' => false,		  
 	);
-	register_post_type( 'products', $args );	
+	register_post_type( 'product', $args );	
 }
 add_action( 'init', 'create_post_types' );
 
@@ -58,44 +58,44 @@ function create_taxonomies() {
 			'rewrite' 				=> array( 'slug' => 'product-category' ),
 			'show_in_nav_menus' 	=> true,			
 	);	
-	register_taxonomy( 'product_cats', 'products', $args );
+	register_taxonomy( 'product_cat', 'product', $args );
 }
 add_action( 'init', 'create_taxonomies' );
 
 // Custom column 
-function set_custom_edit_products_columns($columns) {
+function set_custom_edit_product_columns($columns) {
 	$columns = array(
 			'cb' 			=> '<input type="checkbox" />',
-			'product-id' 	=> __( 'Kode' ),
-			'title' 		=> __( 'Nama produk' ),
-			'thumbnail' 	=> __( 'Gambar' ),
-			'price' 		=> __( 'Harga' ),
-			'size' 			=> __( 'Ukuran' )
+			'thumbnail' 	=> __( 'Image' ),
+			'title' 		=> __( 'Product Name' ),
+			'product-id' 	=> __( 'Code' ),			
+			'price' 		=> __( 'Price' ),
+			'size' 			=> __( 'Size' )
 	);
     return $columns;
 }
 
-function custom_products_column( $column, $post_id ) {
+function custom_product_column( $column, $post_id ) {
     switch ( $column ) {
 
         case 'product-id' :
-            echo get_post_meta( $post_id , 'product-id' , true ); 			
+            echo get_post_meta( $post_id , 'product_code' , true ); 			
             break; 
 		case 'thumbnail' :
 			if( has_post_thumbnail() ) {
-				the_post_thumbnail();
+				the_post_thumbnail('thumbnail');
 			} else {
 				echo '<img src="https://placehold.it/100x100" />';
 			}
             break;
 		case 'price' :
-			
+			echo get_post_meta( $post_id , 'product_price' , true );
             break;
 		case 'size' :
-			
+			echo get_post_meta( $post_id , 'product_size' , true );
             break;
 		
     }
 }
-add_filter( 'manage_products_posts_columns', 'set_custom_edit_products_columns' );
-add_action( 'manage_products_posts_custom_column' , 'custom_products_column', 10, 2 );
+add_filter( 'manage_product_posts_columns', 'set_custom_edit_product_columns' );
+add_action( 'manage_product_posts_custom_column' , 'custom_product_column', 10, 2 );
